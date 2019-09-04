@@ -1,0 +1,318 @@
+.html{
+    background-color: #49a513;
+
+}
+
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 87%;
+}
+
+.container{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 20px;
+    color: #3c8710;
+    font-weight: normal;
+    font-size: 140%;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto; 
+}
+/*
+Banner Overlay
+z-index is the stacking order element. 
+Higher z-index number, farther the stack.
+*/
+.image-banner{
+    position: relative;
+}
+
+.image-banner img{
+    display: block;
+}
+
+.banner-description {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(0,0,0,.65) ; 
+    padding: 10px, 25px;
+    
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p{
+    margin: 0;
+}
+
+/*Site Navigation*/
+.siteNav {
+    margin-top: 20px;
+    box-sizing: border-box;
+
+}
+.siteNav ul {
+    margin: 0;
+    padding: 0;
+}
+.siteNav li {
+    margin-right: 5px;
+    list-style: none;
+    float: left;
+    box-sizing: border-box;
+}
+
+.siteNav a{
+    display: block;
+    color: #3c8710;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid lightgray;
+    border-bottom: none;
+}
+
+.siteNav a:hover {
+    background-color: #a5c991; 
+}
+/*End Navigation*/
+
+.content-area{
+    border-top: 3px solid #a5c991;
+    border-bottom: 3px solid #a5c991;
+}
+
+.main-area{
+    width: 50%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+
+/* Table Styles */
+table{
+    border-spacing: 0;
+    padding: 10px 0px 0px 40px;
+    width: 75%;
+    
+    box-sizing: border-box;
+}
+table th {
+    text-align: left;
+    background-color: #a5c991;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0,0,0, .4);
+    
+}
+
+.item-name {
+    width: 60%;
+}
+
+.item-price,
+.item-quantity {
+    width: 20%;
+}
+
+table th,
+table td {
+    border: 1px solid #a5c991;
+    padding: 10px;
+    vertical-align: top;
+}
+
+
+table tbody tr:nth-child(even) td {
+    background-color: lightgray;
+}
+
+table.grocerylist tr :nth-child(2),
+table.grocerylist tr :nth-child(3) {
+    text-align: center;
+}
+
+
+/* Form Styles */
+form{
+    background-color: #ececec;
+    padding: 30px 40px;
+}
+
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input,
+select {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select  {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    border: 1px solid lightgray;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0, .65);
+    outline: none;
+}
+
+input[type="name"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus {
+    border: 1px solid green;
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: green;
+    color: white;
+    padding: 10px 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    outline: none;
+
+}
+
+input[type="submit"]:hover
+input[type="submit"]:focus {
+    border: 1px solid red;
+    background-color: blue;
+}
+
+.checkbox-text {
+    font-size: 85%;
+    color: black;
+}
+
+.sidebar{
+    width: 50%;
+    float: left;
+    background-color: #a5c991;
+    padding: 20px 40px 20px 40px;       /* Moves in a clockwise position. top, right, bottom, left, 
+                                        or you can right to values, one for vertical
+                                        and one for horizontal.*/
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    font-size: 85%;
+    color: #998;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.fix{
+    clear:both;
+}
+
+.group:before, /* this is something that is coied and pasted. Not generally memorized.*/
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+.group{
+    zoom: 1;
+}
+/*
+CSS Topography:
+letter-spacing: 4px 
+(controls the space between letters)
+
+font-size: 200%
+(controls font size)
+
+font-weight: normal 
+(controls font thickness)
+
+font-style: italic 
+(controls italic, bold, etc)
+
+word-spacing: 10px 
+(controls spacing between words)
+
+text-shadow: 2px 10px 3px #ECECEC 
+(horizontal, vertical, blur radius, color of shadow. 
+    You can also use rgba)
+
+text-transform: uppercase; 
+(Makes font uppercase)
+
+text-align: right, left, justifty
+text-indent: 25px;
+
+Vertical Rhythms 
+line-height: 1.5;
+(space between lines)
+*/
+
+/*
+Font Snippets
+2 Types of Font Solutions
+1. Hosted Font Solutions
+    a. Adobe TypeKit (paid)
+    b. Google Fonts (free)
+Will provide you with a code snippet that 
+you copy, paste into the head element.
+
+2. Self Hosted Fonts
+    a. Fonts that live on our computer/server
+    Steps.
+    1. Download font 
+        Font squirrel is a reference.
+    2. Move files into same folder of css page.
+    3. write code to target fonts
+        @font-face {
+            font-family: "nameOfFont";
+            src: url('foldername/nameOfFile') format('file extension');
+            Must create links to the other files. 
+            font-weight: type of font. ex: normal;
+            font-style: type of font. ex: normal;
+**Warning**
+More custom fonts = longer loading time
+Less fonts the better
+        Create @font-face style for each font style. 
+        Reference #38. Using Custom "Web" fonts 
+        in HTML/CSS class. 
+        }
+*/
